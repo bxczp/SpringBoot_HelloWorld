@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="jquery/jquery.js"></script>
+
+<script type="text/javascript">
+function submitFun() {
+	$.post("ajax/hello", {'data':'你好'}, function(data) {
+		alert(data);
+	});
+}
+
+</script>
+
+</head>
+<body>
+
+   <button onclick="submitFun()">Ajax</button>
+   <br/>
+   <a href="block/1111">Block</a>
+</body>
+</html>
